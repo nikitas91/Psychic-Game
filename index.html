@@ -9,6 +9,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Psychic Game</title>
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -16,12 +19,66 @@
 
 <body>
 
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Psychic Game</h1>
+            <hr>
+            <p>
+                <strong>Objective: </strong>Guess what letter I'm thinking of
+            </p>
+            <p class="game-info text-muted">***Only alphbetic characters are allowed***</p>
+            <div class="game-stats">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="stat-card stat-card-wins">
+                            <div class="stat-card-heading">Wins</div>
+                            <div class="stat-card-body">
+                                <span id="userWins" class="text-muted"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card stat-card-losses">
+                            <div class="stat-card-heading">Losses</div>
+                            <div class="stat-card-body">
+                                <span id="userLosses" class="text-muted">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card stat-card-guesses">
+                            <div class="stat-card-heading">Guesses Left</div>
+                            <div class="stat-card-body">
+                                <span id="userGuessesLeft" class="text-muted">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-guesses">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="stat-card stat-card-default">
+                            <div class="stat-card-heading">Your guesses so far</div>
+                            <div class="stat-card-body">
+                                <span id="lettersGuessed" class="text-muted">a,e,i</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="game-info text-muted">&copy; Copyright 2017 Nikita Sasunkevich</p>
+        </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <!-- Game.js -->
+    <script src="./assets/js/game.js"></script>
 </body>
 
 </html>

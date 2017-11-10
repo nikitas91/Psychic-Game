@@ -1,0 +1,49 @@
+body {
+    padding-top: 80px;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.game-stats {
+    padding: 25px 0;
+    margin-bottom: 15px;
+}
+
+.game-info {
+    font-size: 13px !important;
+}
+
+.stat-card {
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    padding: 15px 0;
+}
+
+.stat-card-heading {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.stat-card-body {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.stat-card-default {
+    border-color: #2e6da4;
+}
+
+.stat-card-wins {
+    border-color: #4cae4c;
+}
+
+.stat-card-losses {
+    border-color: #d43f3a;
+}
+
+.stat-card-guesses {
+    border-color: #46b8da;
+}
